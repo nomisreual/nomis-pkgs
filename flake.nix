@@ -13,7 +13,7 @@
   {
     packages.${system}.python311 = pkgs.writeShellScriptBin "python" ''
       export LD_LIBRARY_PATH=$NIX_LD_LIBRARY_PATH
-      exec ${pkgs.python311}/bin/python "$@"
+      exec ${pkgs.python312}/bin/python "$@"
     '';
   };
 }
